@@ -1,0 +1,13 @@
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+
+# Editores
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node modules (si llegas a usar)
+node_modules/
