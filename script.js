@@ -55,9 +55,9 @@ document.addEventListener('DOMContentLoaded', () => {
 const productosAmigurumis = [
     {
         id: 1,
-        nombre: "Honguito",
+        nombre: "Toad",
         descripcion: "Llaveros en forma de honguito",
-        precio: 120.00,
+        precio: 45.00,
         imagen: "pedidos/hongos_pedidos.jpeg",
         emoji: "🧸",
         badge: "Popular",
@@ -65,13 +65,13 @@ const productosAmigurumis = [
     },
     {
         id: 2,
-        nombre: "Pez de la suerte",
+        nombre: "fishcake",
         descripcion: "Adorable llavero de pez",
-        precio: 110.00,
+        precio: 45.00,
         imagen: "pedidos/pez_pedido.jpeg",
         emoji: "🐰",
-        badge: "Nuevo",
-        badgeType: "new"
+        badge: null,
+        badgeType: null
     }
 ];
 
@@ -79,8 +79,8 @@ const productosAnime = [
     {
         id: 4,
         nombre: "Gojo Gato",
-        descripcion: "Vas a caer gege",
-        precio: 110.00,
+        descripcion: "Vas a caer gege, llavero de Gojo Satoru en forma de gato",
+        precio: 100.00,
         imagen: "images/gojo_gato.jpg",
         emoji: "⚡",
         badge: "Popular",
@@ -89,7 +89,7 @@ const productosAnime = [
     {
         id: 5,
         nombre: "Zoro",
-        descripcion: "Zoro One Piece",
+        descripcion: "Zoro de One Piece",
         precio: 250.00,
         imagen: "images/zoro.jpg",
         emoji: "⚔️",
