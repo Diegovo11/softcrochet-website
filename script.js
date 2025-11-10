@@ -390,7 +390,7 @@ const productosBolsas = [
         nombre: "Gorritos inspirados en Bbokari y Jiniret",
         descripcion: "Estambre 100% poliester.",
         precio: 200.00,
-        imagen: "images/gorritos.jpg",
+        imagen: "images/accesorios/gorritos.jpg",
         emoji: "👧",
         badge: "Nuevo",
         badgeType: "new"
