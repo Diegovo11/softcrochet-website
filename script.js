@@ -523,27 +523,45 @@ document.addEventListener('DOMContentLoaded', () => {
     const modal = document.getElementById('imageModal');
     const closeBtn = document.querySelector('.modal-close');
     
-    // Cerrar al hacer clic en la X
-    closeBtn.addEventListener('click', () => {
+    const cerrarModal = () => {
         modal.style.display = 'none';
         document.body.style.overflow = 'auto';
-    });
+    };
     
-    // Cerrar al hacer clic fuera del contenido
+    // Cerrar al hacer clic en la X (soporte touch)
+    closeBtn.addEventListener('click', cerrarModal);
+    closeBtn.addEventListener('touchstart', (e) => {
+        e.preventDefault();
+        cerrarModal();
+    }, { passive: false });
+    
+    // Cerrar al hacer clic/touch fuera del contenido
     modal.addEventListener('click', (e) => {
         if (e.target === modal) {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
+            cerrarModal();
         }
     });
+    
+    modal.addEventListener('touchstart', (e) => {
+        if (e.target === modal) {
+            cerrarModal();
+        }
+    }, { passive: true });
     
     // Cerrar con la tecla ESC
     document.addEventListener('keydown', (e) => {
         if (e.key === 'Escape' && modal.style.display === 'flex') {
-            modal.style.display = 'none';
-            document.body.style.overflow = 'auto';
+            cerrarModal();
         }
     });
+    
+    // Prevenir scroll en el modal content
+    const modalContent = document.querySelector('.modal-content-wrapper');
+    if (modalContent) {
+        modalContent.addEventListener('touchmove', (e) => {
+            e.stopPropagation();
+        }, { passive: true });
+    }
 });
 
 // ==========================================
@@ -556,6 +574,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         e.preventDefault();
         const target = document.querySelector(this.getAttribute('href'));
         if (target) {
+            // Usar scrollIntoView con behavior smooth
             target.scrollIntoView({
                 behavior: 'smooth',
                 block: 'start'
@@ -566,8 +585,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
             if (dropdown) {
                 dropdown.classList.remove('active');
             }
+            
+            // En móviles, agregar un pequeño delay para mejor UX
+            if (window.innerWidth <= 640) {
+                setTimeout(() => {
+                    window.scrollBy(0, -10); // Ajuste fino para compensar el header
+                }, 100);
+            }
         }
     });
+    
+    // Agregar soporte táctil
+    anchor.addEventListener('touchend', function (e) {
+        // El evento click se manejará normalmente
+        // Esto es solo para mejorar la respuesta táctil
+    }, { passive: true });
 });
 
 // Manejo del menú desplegable de categorías
@@ -576,17 +608,27 @@ document.addEventListener('DOMContentLoaded', () => {
     const dropdownToggle = document.querySelector('.dropdown-toggle');
     
     if (dropdownToggle) {
+        // Soporte para click y touch
         dropdownToggle.addEventListener('click', function(e) {
             e.preventDefault();
+            e.stopPropagation();
             dropdown.classList.toggle('active');
         });
         
-        // Cerrar el dropdown al hacer clic fuera
-        document.addEventListener('click', function(e) {
+        dropdownToggle.addEventListener('touchstart', function(e) {
+            e.preventDefault();
+            dropdown.classList.toggle('active');
+        }, { passive: false });
+        
+        // Cerrar el dropdown al hacer clic/touch fuera
+        const closeDropdown = function(e) {
             if (!dropdown.contains(e.target)) {
                 dropdown.classList.remove('active');
             }
-        });
+        };
+        
+        document.addEventListener('click', closeDropdown);
+        document.addEventListener('touchstart', closeDropdown, { passive: true });
     }
 });
 
