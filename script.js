@@ -572,26 +572,41 @@ document.addEventListener('DOMContentLoaded', () => {
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
+        const href = this.getAttribute('href');
+        
+        // Si es solo "#", no hacer nada
+        if (href === '#') {
+            return;
+        }
+        
+        const target = document.querySelector(href);
         if (target) {
-            // Usar scrollIntoView con behavior smooth
-            target.scrollIntoView({
-                behavior: 'smooth',
-                block: 'start'
-            });
-            
-            // Cerrar el dropdown después de hacer clic
+            // Cerrar el dropdown antes de hacer scroll
             const dropdown = this.closest('.dropdown');
             if (dropdown) {
                 dropdown.classList.remove('active');
             }
             
-            // En móviles, agregar un pequeño delay para mejor UX
-            if (window.innerWidth <= 640) {
-                setTimeout(() => {
-                    window.scrollBy(0, -10); // Ajuste fino para compensar el header
-                }, 100);
+            // Calcular offset según el dispositivo
+            const isMobile = window.innerWidth <= 640;
+            const isTablet = window.innerWidth > 640 && window.innerWidth <= 968;
+            
+            let offset = 120; // Desktop
+            if (isMobile) {
+                offset = 150; // Móviles necesitan más espacio
+            } else if (isTablet) {
+                offset = 130; // Tablets
             }
+            
+            // Obtener la posición del elemento
+            const targetPosition = target.getBoundingClientRect().top + window.pageYOffset;
+            const offsetPosition = targetPosition - offset;
+            
+            // Hacer scroll con animación suave
+            window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+            });
         }
     });
     
