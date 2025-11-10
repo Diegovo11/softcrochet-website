@@ -1033,7 +1033,7 @@ body::after {
 
 
 
-/* Copos de nieve decorativos */
+/* Copos de nieve decorativos - TODAS LAS TARJETAS */
 .product-card::after {
     content: '❄';
     position: absolute;
@@ -1041,9 +1041,24 @@ body::after {
     right: 10px;
     font-size: 1.8rem;
     color: rgba(168, 197, 219, 0.4);
-    z-index: 2;
+    z-index: 1;
     animation: twinkleSnow 3s infinite ease-in-out;
     text-shadow: 0 0 10px rgba(255, 255, 255, 0.6);
+    pointer-events: none;
+}
+
+/* Segundo copo de nieve en la esquina izquierda */
+.product-card::before {
+    content: '❄';
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    font-size: 1.5rem;
+    color: rgba(168, 197, 219, 0.3);
+    z-index: 1;
+    animation: twinkleSnow 4s infinite ease-in-out;
+    animation-delay: 1.5s;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
     pointer-events: none;
 }
 
@@ -1159,6 +1174,7 @@ body::after {
     text-transform: uppercase;
     letter-spacing: 1px;
     transform: rotate(-3deg);
+    z-index: 3;
 }
 
 .product-badge.popular {
