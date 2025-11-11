@@ -58,7 +58,7 @@ const productosAmigurumis = [
         nombre: "Toad's",
         descripcion: "Llavero de estambre 100% algodón.",
         precio: 45.00,
-        imagen: "images/amigorumis/toad.jpg",
+        imagen: "images/amigorumis/toad.webp",
         emoji: "🧸",
         badge: "Popular",
         badgeType: "popular"
@@ -68,7 +68,7 @@ const productosAmigurumis = [
         nombre: "Fish cake",
         descripcion: "llavero de estambre 100% algodón.",
         precio: 45.00,
-        imagen: "images/amigorumis/fish_cake.jpg",
+        imagen: "images/amigorumis/fish_cake.webp",
         emoji: "👧",
         badge: "Nuevo",
         badgeType: "new"
@@ -78,7 +78,7 @@ const productosAmigurumis = [
         nombre: "Coraline Jones",
         descripcion: "Estambre 100% algodón.",
         precio: 150.00,
-        imagen: "images/amigorumis/caroline_jones.jpg",
+        imagen: "images/amigorumis/caroline_jones.webp",
         emoji: "👧",
         badge: "Nuevo",
         badgeType: "new"
@@ -88,7 +88,7 @@ const productosAmigurumis = [
         nombre: "Koya BT21",
         descripcion: "Estambre 100% algodón.",
         precio: 270.00,
-        imagen: "images/amigorumis/koya.jpg",
+        imagen: "images/amigorumis/koya.webp",
         emoji: "👧",
         badge: "Nuevo",
         badgeType: "new"
@@ -98,7 +98,7 @@ const productosAmigurumis = [
         nombre: "Shooky BT21",
         descripcion: "Estambre 100% algodón.",
         precio: 270.00,
-        imagen: "images/amigorumis/shooky.jpg",
+        imagen: "images/amigorumis/shooky.webp",
         emoji: "👧",
         badge: "Nuevo",
         badgeType: "new"
@@ -108,7 +108,7 @@ const productosAmigurumis = [
         nombre: "Ajolote",
         descripcion: "Estambre 100% algodón.",
         precio: 150.00,
-        imagen: "images/amigorumis/axolote.jpg",
+        imagen: "images/amigorumis/axolote.webp",
         emoji: "👧",
         badge: "Nuevo",
         badgeType: "new"
@@ -118,7 +118,7 @@ const productosAmigurumis = [
         nombre: "Tlacuache",
         descripcion: "Estambre 100% poliester.",
         precio: 100.00,
-        imagen: "images/amigorumis/Tlacuache.jpg",
+        imagen: "images/amigorumis/Tlacuache.webp",
         emoji: "👧",
         badge: "Nuevo",
         badgeType: "new"
@@ -128,7 +128,7 @@ const productosAmigurumis = [
         nombre: "Ositos",
         descripcion: "llaveros de estambre 100% algodón.",
         precio: 90.00,
-        imagen: "images/amigorumis/ositos.jpg",
+        imagen: "images/amigorumis/ositos.webp",
         emoji: "👧",
         badge: "Nuevo",
         badgeType: "new"
@@ -141,7 +141,7 @@ const productosAnime = [
         nombre: "Satoru Gojo cat",
         descripcion: "Estambre 100% algodón.",
         precio: 100.00,
-        imagen: "images/anime/gojo_cat.jpg",
+        imagen: "images/anime/gojo_cat.webp",
         emoji: "⚡",
         badge: "Popular",
         badgeType: "popular"
@@ -151,7 +151,7 @@ const productosAnime = [
         nombre: "Roronoa Zoro",
         descripcion: "Estambre 100% algodón.",
         precio: 270.00,
-        imagen: "images/anime/zoro.jpg",
+        imagen: "images/anime/zoro.webp",
         emoji: "⚔️",
         badge: "Especial",
         badgeType: "special"
@@ -164,7 +164,7 @@ const productosFlores = [
         nombre: "Flor de chihiro",
         descripcion: "Estambre 100% algodón, 38 cm de altura",
         precio: 80.00,
-        imagen: "images/flores/flor_chihiro.jpg",
+        imagen: "images/flores/flor_chihiro.webp",
         emoji: "🌷",
         badge: null,
         badgeType: null
@@ -174,7 +174,7 @@ const productosFlores = [
         nombre: "Rosas",
         descripcion: "Estambre 100% algodón, 32 cm de altura",
         precio: 80.00,
-        imagen: "images/flores/rosa.jpg",
+        imagen: "images/flores/rosa.webp",
         emoji: "🌹",
         badge: null,
         badgeType: null
@@ -184,7 +184,7 @@ const productosFlores = [
         nombre: "Lirio",
         descripcion: "Estambre 100% algodón.",
         precio: 150.00,
-        imagen: "images/flores/lirio.jpg",
+        imagen: "images/flores/lirio.webp",
         emoji: "🌻",
         badge: "Nuevo",
         badgeType: "new"
@@ -194,7 +194,7 @@ const productosFlores = [
         nombre: "Anthurium",
         descripcion: "Estambre 100% algodón, 13 cm de alto x 10 de ancho",
         precio: 100.00,
-        imagen: "images/flores/Anthurium.jpg",
+        imagen: "images/flores/Anthurium.webp",
         emoji: "🌻",
         badge: null,
         badgeType: null
@@ -204,7 +204,7 @@ const productosFlores = [
         nombre: "Lavandas",
         descripcion: "Estambre 100% algodón.",
         precio: 45.00,
-        imagen: "images/flores/lavandas.jpg",
+        imagen: "images/flores/lavandas.webp",
         emoji: "🌻",
         badge: null,
         badgeType: null
@@ -214,7 +214,7 @@ const productosFlores = [
         nombre: "Tulipan",
         descripcion: "Estambre 100% algodón, 36 cm de altura",
         precio: 100.00,
-        imagen: "images/flores/tulipan.jpg",
+        imagen: "images/flores/tulipan.webp",
         emoji: "🌻",
         badge: null,
         badgeType: null
@@ -224,7 +224,7 @@ const productosFlores = [
         nombre: "Mini Tulipanes",
         descripcion: "Estambre 100% algodón.",
         precio: 45.00,
-        imagen: "images/flores/mini_tulipanes.jpg",
+        imagen: "images/flores/mini_tulipanes.webp",
         emoji: "🌻",
         badge: null,
         badgeType: null
@@ -234,7 +234,7 @@ const productosFlores = [
         nombre: "Alcatraz",
         descripcion: "Estambre 100% algodón.",
         precio: 45.00,
-        imagen: "images/flores/alcatraz.jpg",
+        imagen: "images/flores/alcatraz.webp",
         emoji: "🌻",
         badge: null,
         badgeType: null
@@ -244,7 +244,7 @@ const productosFlores = [
         nombre: "Lirios del Valle",
         descripcion: "Estambre 100% algodón.",
         precio: 80.00,
-        imagen: "images/flores/lirio_valle.jpg",
+        imagen: "images/flores/lirio_valle.webp",
         emoji: "🌻",
         badge: null,
         badgeType: null
@@ -257,7 +257,7 @@ const productosHalloween = [
         nombre: "Gato Calabaza",
         descripcion: "Llavero de estambre 100% algodón de 5 cm de alto.",
         precio: 45.00,
-        imagen: "images/halloween/gato_calabaza.jpg",
+        imagen: "images/halloween/gato_calabaza.webp",
         emoji: "🎃",
         badge: "Especial",
         badgeType: "special"
@@ -267,7 +267,7 @@ const productosHalloween = [
         nombre: "Mini Frankenstein",
         descripcion: "Llavero de estambre 100% algodón de 5 cm de alto.",
         precio: 45.00,
-        imagen: "images/halloween/mini_Frankenstein.jpg",
+        imagen: "images/halloween/mini_Frankenstein.webp",
         emoji: "🧟",
         badge: "Popular",
         badgeType: "popular"
@@ -277,7 +277,7 @@ const productosHalloween = [
         nombre: "Oogie Boogie",
         descripcion: "Llavero de estambre 100% algodón de 11 cm de alto.",
         precio: 90.00,
-        imagen: "images/halloween/Oogie_Boogie.jpg",
+        imagen: "images/halloween/Oogie_Boogie.webp",
         emoji: "👻",
         badge: "Especial",
         badgeType: "special"
@@ -287,7 +287,7 @@ const productosHalloween = [
         nombre: "Arañita",
         descripcion: "Estambre 100% poliester de 10 cm de largo.",
         precio: 100.00,
-        imagen: "images/halloween/arañita.jpg",
+        imagen: "images/halloween/arañita.webp",
         emoji: "🕷️",
         badge: null,
         badgeType: null
@@ -297,7 +297,7 @@ const productosHalloween = [
         nombre: "Murcielago 1V",
         descripcion: "llavero de estambre 100% algodón.",
         precio: 90.00,
-        imagen: "images/halloween/murcielago_v1.jpg",
+        imagen: "images/halloween/murcielago_v1.webp",
         emoji: "🦇",
         badge: "Nuevo",
         badgeType: "new"
@@ -307,7 +307,7 @@ const productosHalloween = [
         nombre: "Llavero Día de Muertos",
         descripcion: "Llavero de estambre 100% algodón.",
         precio: 150.00,
-        imagen: "images/halloween/dia_muertos.jpg",
+        imagen: "images/halloween/dia_muertos.webp",
         emoji: "💀",
         badge: null,
         badgeType: null
@@ -317,7 +317,7 @@ const productosHalloween = [
         nombre: "Trick 'r Treat",
         descripcion: "Llavero de estambre 100% algodón de 9 cm de alto",
         precio: 90.00,
-        imagen: "images/halloween/Trick_Treat.jpg",
+        imagen: "images/halloween/Trick_Treat.webp",
         emoji: "💀",
         badge: null,
         badgeType: null
@@ -327,7 +327,7 @@ const productosHalloween = [
         nombre: "Murcielago 2V",
         descripcion: "llavero de estambre 100% poliester.",
         precio: 100.00,
-        imagen: "images/halloween/arañita_v2.jpg",
+        imagen: "images/halloween/arañita_v2.webp",
         emoji: "👧",
         badge: "Nuevo",
         badgeType: "new"
@@ -337,7 +337,7 @@ const productosHalloween = [
         nombre: "Calabaza",
         descripcion: "llavero de estambre 100% algodón.",
         precio: 90.00,
-        imagen: "images/halloween/calabaza.jpg",
+        imagen: "images/halloween/calabaza.webp",
         emoji: "👧",
         badge: "Nuevo",
         badgeType: "new"
@@ -350,7 +350,7 @@ const productosBolsas = [
         nombre: "Totebag 'the name chapter: TEMPTATION de TXT'",
         descripcion: "Estambre 100% agoldon de 23 x 22 cm, mas 23 cm de largo con las cintas.",
         precio: 270.00,
-        imagen: "images/accesorios/totebag.jpg",
+        imagen: "images/accesorios/totebag.webp",
         emoji: "🛍️",
         badge: "Popular",
         badgeType: "popular"
@@ -360,7 +360,7 @@ const productosBolsas = [
         nombre: "Cat Beanie",
         descripcion: "inspirado en V de BTS de lana 100% acrilica",
         precio: 270.00,
-        imagen: "images/accesorios/cat_beanie.jpg",
+        imagen: "images/accesorios/cat_beanie.webp",
         emoji: "👜",
         badge: "Nuevo",
         badgeType: "new"
@@ -370,7 +370,7 @@ const productosBolsas = [
         nombre: "Portalabial de Medusa",
         descripcion: "Estambre 100% algodon.",
         precio: 100.00,
-        imagen: "images/accesorios/porta_labios.jpg",
+        imagen: "images/accesorios/porta_labios.webp",
         emoji: "👧",
         badge: "Nuevo",
         badgeType: "new"
@@ -380,7 +380,7 @@ const productosBolsas = [
         nombre: "Separador de libros versión perro salchicha",
         descripcion: "Estambre 100% algodon.",
         precio: 90.00,
-        imagen: "images/accesorios/separador_dog.jpg",
+        imagen: "images/accesorios/separador_dog.webp",
         emoji: "👧",
         badge: "Nuevo",
         badgeType: "new"
@@ -390,7 +390,7 @@ const productosBolsas = [
         nombre: "Gorritos inspirados en Bbokari y Jiniret",
         descripcion: "Estambre 100% poliester.",
         precio: 200.00,
-        imagen: "images/accesorios/gorritos.jpg",
+        imagen: "images/accesorios/gorritos.webp",
         emoji: "👧",
         badge: "Nuevo",
         badgeType: "new"
